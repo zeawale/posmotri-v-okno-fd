@@ -75,13 +75,14 @@ ol {
   margin: 0 30px;
 }
 
-.search-form { 
+.search-form {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 
 .content__list-container {
+  position: relative;
   max-height: 298px;
   overflow: hidden scroll;
 }
@@ -139,10 +140,11 @@ ol {
   color: #545050;
 }
 
-.content__card-link{
+.content__card-link {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  display: block;
 }
 
 .content__video-card-title {
@@ -287,12 +289,6 @@ fieldset {
   background-color: #545050;
 }
 
-.content__card-link {
-  display: block;
-  padding: 0;
-  cursor: pointer;
-}
-
 .content__card-link:active {
   background-color: #545050;
 }
@@ -315,9 +311,5 @@ fieldset {
 }
 
 .result__video-container{
-  position: relative;
-}
-
-.content__list-container {
   position: relative;
 }

@@ -82,7 +82,7 @@ ol {
 
 .content__list-container {
   position: relative;
-  max-height: 298px;
+  block-size: 298px;
   overflow: hidden scroll;
 }
 
@@ -93,7 +93,7 @@ ol {
 }
 
 .title {
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -104,14 +104,18 @@ ol {
 .result__video {
   width: 711px;
   height: 386px;
-  margin-bottom: 8px;
   object-fit: fill;
+}
+
+.result__video-container { 
+
+  margin-bottom: 10px;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .content__video-card {
@@ -147,16 +151,22 @@ ol {
 }
 
 .content__video-card-title {
+  margin-block-end: 6px;
   font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 30px; 
+  font-size: 30px;
+  line-height: 1;
   text-transform: uppercase;
   text-overflow: ellipsis;
+  line-clamp: 1;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
   font-weight: 400;
   line-height: 16.2px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
   text-overflow: ellipsis;
   line-clamp: 1;
 }
@@ -187,9 +197,9 @@ fieldset {
   min-width: 225px;
   min-height: 27px;
   border: none;
-  border-top: 1px solid rgb(255 255 255 / 70%);
+  border-top: 1px solid rgb(255 255 255);
   border-right: 1px solid transparent;
-  border-bottom: 1px solid rgb(255 255 255 / 70%);
+  border-bottom: 1px solid rgb(255 255 255);
   border-left: 1px solid transparent;
   color: #FFF;
   background-color: transparent;
@@ -205,7 +215,8 @@ fieldset {
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 70%);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__textfield:focus {
@@ -246,6 +257,7 @@ fieldset {
   border: 1px solid #fff;
   color: #FFF;
   font-weight: 700;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: transparent;
   cursor: pointer;

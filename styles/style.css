@@ -107,6 +107,7 @@ ol {
 .result__video-container { 
   max-height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .content__list {
@@ -323,8 +324,4 @@ fieldset {
 .content__card-link:focus-visible {
   outline: 1px #fff solid;
   outline-offset: 2px;
-}
-
-.result__video-container{
-  position: relative;
 }

@@ -71,7 +71,7 @@ ol {
   align-items: end;
   gap: 30px;
   width: 1140px;
-  margin: 0 38px;
+  margin: 0 auto;
 }
 
 .search-form {
@@ -82,7 +82,7 @@ ol {
 
 .content__list-container {
   position: relative;
-  overflow: hidden scroll;
+  overflow: hidden auto;
   block-size: 298px;
 }
 
@@ -215,6 +215,7 @@ fieldset {
   background-color: transparent;
   cursor: pointer;
   appearance: none;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__textfield:active {

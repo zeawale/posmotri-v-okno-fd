@@ -80,7 +80,7 @@ ol {
 
 .content__list-container {
   position: relative;
-  overflow: hidden auto;
+  overflow: auto;
   block-size: 298px;
 }
 
@@ -215,6 +215,8 @@ fieldset {
   background-color: transparent;
   cursor: pointer;
   appearance: none;
+  font-size: 18px;
+  line-height: 21.6px;
 }
 
 .search-form__textfield:active {
